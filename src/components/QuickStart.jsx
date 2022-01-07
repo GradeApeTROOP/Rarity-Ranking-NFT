@@ -196,7 +196,7 @@ function HomePage() {
                       paddingBottom: "2px",
                     }}
                   >
-                    Moralis NFT Ranking
+                    Grade Ape Ranking
                   </div>
                 </div>
                 {nft.attributes.map((e) => {
@@ -233,8 +233,8 @@ function HomePage() {
                             }}
                           >
                             {e.trait_type === "TraitCount" ? 
-                            ((8* (10000 / e.rarityScore)).toFixed(0)) :  //Only use this if rarity generator adjusted to 8x traitcount
-                            ((10000 / e.rarityScore).toFixed(0))         //Also must be adjusted for collections with +- 10000 NFTs
+                            ((8* (11111 / e.rarityScore)).toFixed(0)) :  //Only use this if rarity generator adjusted to 8x traitcount
+                            ((11111 / e.rarityScore).toFixed(0))         //Also must be adjusted for collections with +- 10000 NFTs
                             }  
                           </Button>
                         }

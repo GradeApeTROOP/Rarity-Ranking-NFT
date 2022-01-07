@@ -1,8 +1,8 @@
 const Moralis = require("moralis/node");
 const { timer } = require("rxjs");
 
-const serverUrl = ""; //Moralis Server Url here
-const appId = ""; //Moralis Server App ID here
+const serverUrl = "https://5zfnvhou5keg.usemoralis.com:2053/server"; //Moralis Server Url here
+const appId = "kqHV047CWgEUjr5oUOjIoKDW8JjUX2aGCnrKxLdl"; //Moralis Server App ID here
 Moralis.start({ serverUrl, appId });
 
 const resolveLink = (url) => {
@@ -10,8 +10,8 @@ const resolveLink = (url) => {
   return url.replace("ipfs://", "https://gateway.ipfs.io/ipfs/");
 };
 
-const collectionAddress = ""; //Collection Address Here
-const collectionName = ""; //CollectioonName Here
+const collectionAddress = "0x387e9625a6fBDe9F483b8371fF35c10AD8621980"; //Collection Address Here
+const collectionName = "GradeApeTroop"; //CollectioonName Here
 
 async function generateRarity() {
   const NFTs = await Moralis.Web3API.token.getAllTokenIds({
